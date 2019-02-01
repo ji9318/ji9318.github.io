@@ -9,15 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
 	<header>
 
 		<div class="wrapper">
-			<a href="#" class="logo"> <span class="blind">STARBUCKS</span> <img src="img/logo.png" alt="" title="starbucks"/> </a>
+			<h1><a href="#" class="logo"><img src="img/logo.png" alt="starbucks" title="starbucks"/></a></h1>
 			<nav>
 				<ul>
 					<li><a href="#">COFFEE</a></li>
@@ -33,6 +33,7 @@
 	</header><!-- End Header -->
 
 	<section class="billboard">
+		<h2 class="blind">billboard</h2>
 		<section class="caption wrapper">
 			<p class="cap_title">Introducing the Starbucks<br> Rewards™ Visa® Card</p>
 			<p class="cap_desc">Enjoy more of what you love. Earn Stars — that add up to food and drink<br>  Rewards — everywhere you make purchases.</p>
@@ -43,10 +44,10 @@
 	
 
 	<section class="video wrapper">
-		<h3>STARBUCKS RESERVE</h3>
+		<h2>STARBUCKS RESERVE</h2>
 		<p>세계 최고급 커피 상위 3% 이내의 원두를 찾기 위한<br>스타벅스의 커피전문가들의 이야기를 지금 영상으로 확인하세요.</p>
 		<div class="ex_video">
-			<a href="#"> <span class="blind">VIDEO</span><video src="source/starbuck_reserve.mp4" alt="" title="" controls/></a>
+			 <span class="blind">VIDEO</span><video src="source/starbuck_reserve.mp4" controls/>
 			<div class="control">
 				<button id="btn-play"><i class="material-icons">play_arrow</i></button>
 				<button id="btn-replay"><i class="material-icons">replay</i></button>
@@ -60,7 +61,7 @@
 
 
 	<section class="recent_work wrapper">
-		<h3 class="S_title">NEW DRINK</h3>
+		<h2 class="S_title">NEW DRINK</h2>
 
 		<div class="work">
 			<a href="#" class="work_img">
@@ -103,6 +104,7 @@
 
 
 	<section class="subscription">
+		<h2 class="blind">subscription</h2>
 		<div class="wrapper">
 			<p class="title">스타벅스에 가입하세요.</p>
 			<p class="desc">가입을 통해 리워드 혜택을 즐기세요.</p>
@@ -113,6 +115,7 @@
 
 
 	<section class="social">
+		<h2 class="blind">social</h2>
 			<a href="http://facebook.com/pixelhint" target="_blank" class="fb"><span class="blind">facebook</span></a>
 			<a href="http://twitter.com/pixelhint" target="_blank" class="t"><span class="blind">twitter</span></a>
 			<a href="http://dribbble.com/pixelhint" target="_blank" class="d"><span class="blind">dribbble</span></a>
@@ -132,7 +135,7 @@
 	<div id="lightbox"></div>
 	<div id="box">
 		<a href="#" class="close"><span class="blind">닫기</span></a>
-		<form method="" action="">
+		<form>
 			<input type="text" id="email" placeholder="Email" title="이메일입력"/>
 			<input type="text" id="name" placeholder="Name" title="이름입력"/>
 			<input type="submit" id="submit" value="SIGN IN"/>
