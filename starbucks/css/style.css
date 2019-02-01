@@ -254,7 +254,7 @@ footer .info{padding: 20px 0;}
         z-index: 3;}
     form input{background: #007042; color:#fff;}
     .btn_menu{display: none;}
-    .gnb *{transition: height 0.5,background 0.5s;}
+    .gnb *{transition:0.5s;}
     .gnb > li{float: left; width: 25%;}
     .gnb > li > a{background: #007042;}
     .gnb ul{background: #f6f5ef;}
