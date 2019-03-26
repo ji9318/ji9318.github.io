@@ -56,38 +56,4 @@ $(function()
         }
     })
 
-    //easy pie chart
-    $('.chart').eq(0).easyPieChart({
-        barColor:'#89f7fe',
-        size:120,
-        scaleColor:false,
-        lineWidth:5,
-    });
-    $('.chart').eq(1).easyPieChart({
-        barColor:'#80e2fe',
-        size:120,
-        scaleColor:false,
-        lineWidth:5,
-    });
-    $('.chart').eq(2).easyPieChart({
-        barColor:'#7bd0fe',
-        size:120,
-        scaleColor:false,
-        lineWidth:5,
-    });
-    $('.chart').eq(3).easyPieChart({
-        barColor:'#6fbaff',
-        size:120,
-        scaleColor:false,
-        lineWidth:5,
-    });
-    $('.chart').eq(4).easyPieChart({
-        barColor:'#66a6ff',
-        size:120,
-        scaleColor:false,
-        lineWidth:5,
-    });
-    if(scrollTop==windowH){
-        $('.chart').data('easyPieChart').update();
-    }
 })

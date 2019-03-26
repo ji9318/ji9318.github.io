@@ -140,10 +140,10 @@ article .title {
     display: inline-block;
     height: 23px;
     font-size: 22px;
-    border-bottom: 8px solid #7bd0fe;}
+    border-bottom: 8px solid #7dc5ec;}
 
 .about .profile {
-    background: #f1f3f5;
+    border: 9px solid #bedcdf;
     width: 550px;
 }
 .about .about-wrap ul {
@@ -152,7 +152,7 @@ article .title {
 }
 .about .about-wrap ul li {
     line-height: 40px;
-    font-size: 16px;
+    font-size: 17px;
 }
 .about .profile-title li {
     font-weight: 600;
@@ -231,24 +231,30 @@ article .title {
 
 /* portfolio ============================================== */
 
+
+.portfolio .portfolio-wrap {
+    position: absolute;
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .portfolio .portfolio-box {
     position: relative;
-    top: 200px;
-    width: 550px;
-    height: 550px;
-    background: #f1f2f3;
+    top: 170px;
+    width: 650px;
+    height: 600px;
     float: left;
     margin-right: 50px;
 }
 .portfolio .portfolio-box div:nth-child(1) {
-    width: 500px;
-    height: 300px;
-    margin: 20px auto;
+    width: 650px;
+    height: 380px;
+    margin-bottom: 20px;
     overflow: hidden;
-    background: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .portfolio .portfolio-box div:nth-child(2){
-    width: 500px;
+    width: 650px;
     height: 240px;
     margin: 0 auto;
     padding-left: 20px;
@@ -266,15 +272,21 @@ article .title {
     width: 100%;
 }
 .portfolio .portfolio-box a {
-    border: 1px solid #000;
-    padding: 3px 10px;
+    border: 1px solid #70a0e4;
+    background: #70a0e4;
+    color: #fff;
+    padding: 5px 10px;
     font-size: 14px;
     transition: 0.5s;
+    margin-right: 7px;
+}
+.portfolio .portfolio-box a i {
+    margin-left: 5px;
 }
 .portfolio .portfolio-box a:hover {
-    background: #66a6ff;
-    color: #fff;
-    border: 1px solid #66a6ff;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 
 /* contact ============================================== */
