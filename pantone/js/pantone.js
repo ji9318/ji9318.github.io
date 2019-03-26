@@ -78,6 +78,20 @@ $(function()
         $(this).parent().addClass('active');
     })
 
-    
+    //scroll top
+    $('aside a').css('opacity','0');
 
+    $(window).scroll(function()
+    {
+        if($(document).scrollTop() > 180){
+            $('aside a').css('opacity','1');
+        }else{
+            $('aside a').css('opacity','0');
+        }
+        $('aside a').click(function(e)
+        {
+            e.preventDefault();
+            $('html').stop().animate({'scrollTop':0},1000);
+        })
+    })
 })
