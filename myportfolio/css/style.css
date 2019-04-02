@@ -35,6 +35,9 @@ a{text-decoration: none; color: #000;}
     background: none;
     border:1px solid rgba(255, 255, 255, 0.4);
 }
+.home .nav-button {
+    display: none;
+}
 .home nav.scroll{
   background: rgba(255, 255, 255, 0.4);
   border:none;
@@ -81,7 +84,6 @@ a{text-decoration: none; color: #000;}
     opacity: 0.7;
 }
 .home p {
-    display: block;
     position: relative;
     width: 400px;
     height: 400px;
@@ -97,6 +99,7 @@ a{text-decoration: none; color: #000;}
     box-sizing: border-box;
 }
 .home p span {
+    display: block;
     font-size: 30px;
 }
 
@@ -158,7 +161,6 @@ article .title {
     font-weight: 600;
     width: 110px;
 }
-
 .about .profile-contents li:last-child{
     margin-top: 40px;
     margin-left: -100px;
@@ -167,15 +169,11 @@ article .title {
     margin-left: 50px;
     width: 600px;
 }
-
 .about .skills div{
-    width: 200px; 
-    height: 200px;
     margin-right: 40px;
     margin-top: 50px;
     float: left;
 }
-
 .about .skills div:nth-of-type(1){
     background: url(../img/sprite.png) no-repeat -35px -7px;
 	width: 111px;
@@ -193,7 +191,6 @@ article .title {
 	width: 111px;
 	height: 156px;
     margin-left: 15px;
-    
 }
 .about .skills div:nth-of-type(4){
     background: url(../img/sprite.png) no-repeat -374px -199px;
@@ -211,34 +208,14 @@ article .title {
 	height: 136px;
 }
 
-
-.about .chart-wrap {
-    margin-top: 70px;
-}
-.about .chart {
-    position: relative;
-    float: left;
-    width: 120px; height: 120px;
-    line-height: 120px;
-    text-align: center;
-    margin-right: 40px;
-}
-.about .chart-wrap canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 /* portfolio ============================================== */
-
-
+.portfolio {height: 750px}
 .portfolio .portfolio-wrap {
     position: absolute;
     width: 1400px;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-
 }
 .portfolio .portfolio-box {
     position: relative;
@@ -330,7 +307,6 @@ article .title {
   transition: 100ms height ease 300ms;
   -web-kit-transition: 100ms height ease 300ms;
 }
-
 .portfolio .portfolio-box .portfolio-img::before{
     content: ' ';
     position: absolute;
@@ -405,4 +381,187 @@ article .title {
 .contact .contact-wrap ul li i {
     width: 50px;
     text-align: center;
+}
+
+
+
+/* 미디어쿼리 모바일 */
+
+@media screen and (max-width:767px) {
+    /* home */
+    .home nav {
+        height: 50px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .home .nav-button {
+        display: block;
+        width: 50px; height: 50px;
+        border: none;
+        background: none;
+        float: right;
+        color: #fff;
+        font-size: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+    .home .nav-button.black {color: #000;}
+    .home nav h1 {
+        width: 80px;
+        font-size: 27px;
+        line-height: 50px;
+        margin-left: 25px;
+        float: left;
+    }
+    .home nav ul {
+        width: 100%;
+        height: 180px;
+        top: 50px;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .home nav ul li {
+        float: none;
+        margin-left: 50px;
+        line-height: 40px;
+    }
+    .home nav ul li:first-child {
+        margin-top: 10px;
+    }
+    .home nav ul li a {
+        font-size: 15px;
+    }
+    .home p {
+        width: 300px;
+        height: 300px;
+        font-size: 40px;
+        padding-top: 55px;
+    }
+    .home p span {
+        font-size: 25px;
+    }
+
+    /* about */
+    .about {height: 900px;}
+    .about .about-wrap {
+        top: 180px;
+        height: 400px;
+        padding: 10px;
+    }
+    .about .profile {
+        width: 100%;
+    }
+    .about .about-wrap ul li {
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .about .profile-title li {
+        width: 80px;
+    }
+    .about .profile-contents {
+        width: 130px;
+    }
+    .about .profile-contents li:last-child{
+        margin-left: -60px;
+        width: 200px;
+    }
+    .about .skills {
+        margin-left: 0px;
+        width: 350px;
+    }
+    .about .skills div{
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+    .about .skills div:nth-of-type(1){
+        background: url(../img/sprite_m.png) no-repeat -32px -11px;
+	    width: 74px;
+        height: 104px;
+        margin-left: 30px;
+    }
+    .about .skills div:nth-of-type(2){
+        background: url(../img/sprite_m.png) no-repeat  -141px -11px;
+        width: 74px;
+        height: 104px;
+        margin-left: 30px;
+    }
+    .about .skills div:nth-of-type(3){
+        background: url(../img/sprite_m.png) no-repeat -254px -10px;
+        width: 75px;
+        height: 106px;
+        margin-left: 30px;
+    }
+    .about .skills div:nth-of-type(4){
+        background: url(../img/sprite_m.png) no-repeat -34px -150px;
+        width: 75px;
+        height: 73px;
+    }
+    .about .skills div:nth-of-type(5){
+        background: url(../img/sprite_m.png) no-repeat -144px -150px;
+        width: 75px;
+        height: 73px;
+    }
+    .about .skills div:nth-of-type(6){
+        background: url(../img/sprite_m.png) no-repeat -258px -148px;
+        width: 76px;
+        height: 79px;
+    }
+    
+    /* portfolio */
+    .portfolio .portfolio-wrap {
+        width: 100%;
+        height: auto;
+        top: 50px;
+    }
+    .portfolio .portfolio-box {
+        top: 120px;
+        width: 360px;
+        height: 205px;
+        float: none;
+        margin: 30px auto 0;
+    }
+    .portfolio .portfolio-box .portfolio-img {
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio .portfolio-box .portfolio-txt{
+        padding: 30px;
+        width: 330px;
+        height: 175px;
+        margin: 15px;
+    }
+    .portfolio .portfolio-box .portfolio-txt:hover:before {
+      width: 332px;
+    }
+    .portfolio .portfolio-box .portfolio-txt:hover:after {
+      height: 177px;
+    }
+    .portfolio .portfolio-box .portfolio-txt:hover .box-inner:after {
+      width: 332px;
+    }
+    .portfolio .portfolio-box .portfolio-txt:hover .box-inner:before {
+      height: 177px;
+    }
+    .portfolio .portfolio-box .portfolio-img::before{
+        height: 100%;
+    }
+    .portfolio .portfolio-box span {
+        font-size: 16px;
+    }
+    .portfolio .portfolio-box p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .portfolio .portfolio-box a {
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+
+    /* contact */
+    .contact .contact-wrap {
+        width: 350px;
+        height: 350px;
+    }
+    .contact .contact-wrap ul li {
+        font-size: 18px;
+    }
 }

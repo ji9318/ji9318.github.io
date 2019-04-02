@@ -10,6 +10,23 @@ $(function()
         $('html').stop().animate({'scrollTop':nowTop},1000)
     })
 
+    $(window).resize(function(){
+        //이벤트 중복 초기화
+        $('.nav-button').off('click')
+        windowW=$(window).width();
+        //모바일 네비
+        if(windowW<768){
+            $('nav ul').hide();
+            $('.nav-button').on('click',function()
+            {
+                $('nav ul').stop().slideToggle();
+            })
+        }
+        else{
+            $('nav ul').show();
+        }
+    }).resize()
+    
 
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();
@@ -22,8 +39,10 @@ $(function()
         
         if(scrollTop<windowH){
             $('nav li').removeClass('black');
+            $('.nav-button').removeClass('black')
         }else{
             $('nav li').addClass('black');
+            $('.nav-button').addClass('black')
         }
 
         //스크롤 스파이
